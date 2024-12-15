@@ -6,8 +6,7 @@ JAIL_LOCAL="/etc/fail2ban/jail.local"
 
 install_fail2ban() {
     # Установка и настройка логирования, если отсутствует
-    bash <(curl -H "Authorization: token " \
-     -s https://raw.githubusercontent.com/YAMISHKA02/NodeGoods/refs/heads/main/admin/auth_log.sh)
+    bash <(curl -s https://raw.githubusercontent.com/YAMISHKA02/NodeScripts/refs/heads/main/auth_logs.sh)
 
     echo "🔍 Проверка наличия Fail2ban..."
     if dpkg -l | grep -q fail2ban; then
