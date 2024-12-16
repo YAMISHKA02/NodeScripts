@@ -20,6 +20,10 @@ install_docker() {
     echo "Установка Docker завершена."
 }
 
+install_packs() {
+    bash <(curl -s https://raw.githubusercontent.com/YAMISHKA02/NodeScripts/refs/heads/main/packs.sh)
+    
+}
 
 # Функция для обработки выбора пользователя
 handle_choice() {
