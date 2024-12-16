@@ -24,6 +24,15 @@ install_packs() {
     bash <(curl -s https://raw.githubusercontent.com/YAMISHKA02/NodeScripts/refs/heads/main/packs.sh)
     echo "Установка зависимостей завершена."
 }
+# Функция для отображения меню
+show_menu() {
+    echo "Выберите действие:"
+    echo "1. Настройка iptables"
+    echo "2. Установка Fail2ban"
+    echo "3. Установка Docker"
+    echo "4. Установка зависимостей"
+    echo "0. Выход"
+}
 
 # Функция для обработки выбора пользователя
 handle_choice() {
