@@ -43,7 +43,7 @@ EOL
 
 # Проверка существующих контейнеров с таким именем
 function get_next_container_name() {
-    local base_name="Dria-$1"
+    local base_name="dria-$1"
     echo "$base_name"
 }
 CONTAINER_NAME=$(get_next_container_name "$PROXY_IP")
