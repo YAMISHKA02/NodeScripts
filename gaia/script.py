@@ -25,7 +25,7 @@ class DualAPIClient:
 
     def _send_request(self, config):
         try:
-            response = requests.post(config['url'], headers=config['headers'], data=json.dumps(config['data']))
+            response = requests.post(config['url'], headers=config['headers'], data=json.dumps(config['data']), timeout=60)
             if response.status_code == 200:
                 return response.json()
             else:
