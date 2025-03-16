@@ -85,8 +85,8 @@ services:
 EOF
 
 # Pull the latest images and start the containers
-docker compose pull
-docker compose up --build -d
+docker-compose pull
+docker-compose up --build -d
 
 # Final message
 echo "------------------------------------------------------------"
@@ -94,4 +94,4 @@ echo "Node installed successfully. To check logs, use the following command:"
 echo "cd rl-swarm && docker compose logs -f swarm_node"
 echo "------------------------------------------------------------"
 sleep 2
-docker compose logs -f swarm_node
+docker-compose logs -f swarm_node
